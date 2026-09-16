@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="みとろ養蜂場 サイト管理画面">
+  <title>管理画面｜みとろ養蜂場</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+
+  <div class="admin-layout">
+    <aside class="sidebar" id="sidebar">
+      <a class="admin-brand" href="./" aria-label="みとろ養蜂場 管理画面トップ">
+        <span class="brand-mark" aria-hidden="true">蜜</span>
+        <span><strong>みとろ養蜂場</strong><small>SITE ADMIN</small></span>
+      </a>
+
+      <nav class="admin-nav" aria-label="管理メニュー">
+        <a class="is-current" href="./" aria-current="page">
+          <span aria-hidden="true">⌂</span>ホーム
+        </a>
+        <span class="nav-disabled" aria-disabled="true">
+          <span aria-hidden="true">文</span>文章の編集<small>次の段階</small>
+        </span>
+        <span class="nav-disabled" aria-disabled="true">
+          <span aria-hidden="true">画</span>写真の変更<small>次の段階</small>
+        </span>
+        <span class="nav-disabled" aria-disabled="true">
+          <span aria-hidden="true">知</span>お知らせ<small>次の段階</small>
+        </span>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <a href="/" target="_blank" rel="noopener">公開サイトを見る <span>↗</span></a>
+        <a href="/cdn-cgi/access/logout">ログアウト</a>
+      </div>
+    </aside>
+
+    <div class="admin-main-wrap">
+      <header class="topbar">
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="sidebar">
+          <span></span><span></span><span></span><span class="sr-only">管理メニューを開く</span>
+        </button>
+        <div>
+          <p>みとろ養蜂場</p>
+          <span class="login-status"><i aria-hidden="true"></i>ログイン中</span>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="welcome">
+          <div>
+            <p class="eyebrow">ADMINISTRATION</p>
+            <h1>管理画面</h1>
+            <p>みとろ養蜂場のウェブサイト管理ページです。</p>
+          </div>
+          <time id="today" datetime=""></time>
+        </section>
+
+        <section class="status-card" aria-labelledby="site-status-title">
+          <div class="status-icon" aria-hidden="true">✓</div>
+          <div>
+            <p class="card-label">SITE STATUS</p>
+            <h2 id="site-status-title">サイトは公開されています</h2>
+            <p>公開ページの表示状態を確認できます。</p>
+          </div>
+          <a class="button" href="/" target="_blank" rel="noopener">公開サイトを確認 <span>↗</span></a>
+        </section>
+
+        <section class="section-block" aria-labelledby="features-title">
+          <div class="section-title">
+            <div>
+              <p class="eyebrow">NEXT STEP</p>
+              <h2 id="features-title">これから追加する機能</h2>
+            </div>
+            <span>現在は準備中です</span>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-number">01</span>
+              <div class="feature-icon" aria-hidden="true">文</div>
+              <h3>文章を変更</h3>
+              <p>トップページの紹介文や営業時間などを変更できる機能です。</p>
+              <span class="feature-badge">準備中</span>
+            </article>
+            <article class="feature-card">
+              <span class="feature-number">02</span>
+              <div class="feature-icon" aria-hidden="true">画</div>
+              <h3>写真を変更</h3>
+              <p>商品や里山、養蜂体験の写真を入れ替えられる機能です。</p>
+              <span class="feature-badge">準備中</span>
+            </article>
+            <article class="feature-card">
+              <span class="feature-number">03</span>
+              <div class="feature-icon" aria-hidden="true">知</div>
+              <h3>お知らせを追加</h3>
+              <p>採蜜や販売、体験会のお知らせを掲載できる機能です。</p>
+              <span class="feature-badge">準備中</span>
+            </article>
+          </div>
+        </section>
+
+        <aside class="security-note">
+          <span class="lock" aria-hidden="true">●</span>
+          <div>
+            <strong>このページは管理者専用です</strong>
+            <p>Cloudflare Accessによって保護されます。共用端末では、作業後にログアウトしてください。</p>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="admin-footer">© <span id="year"></span> MITORO APIARY</footer>
+    </div>
+  </div>
+
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="admin.js"></script>
+</body>
+</html>

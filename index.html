@@ -3,187 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="地域のお店や小さな活動のためのホームページ制作。話を聞きながら、その人らしいサイトを一緒につくります。">
-  <title>ホームページつくろう｜相談から一緒につくるHP制作</title>
+  <meta name="description" content="兵庫県三木市・みとろの自然とともに蜂蜜をつくる、小さな養蜂場の公式サイト。">
+  <title>みとろ養蜂場｜三木・みとろの自然から、まっすぐなはちみつを。</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2316273f'/%3E%3Cpath d='M16 18h32v23H31l-9 7v-7h-6z' fill='%235c7cff'/%3E%3Cpath d='M23 26h18M23 32h12' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4938'/%3E%3Cpath d='M32 12C20 22 17 34 24 43c4 5 12 7 18 1 8-9 2-23-10-32Z' fill='%23c28a36'/%3E%3Cpath d='M23 39c8-1 15-7 19-18' fill='none' stroke='%23f6f1e7' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">本文へ移動</a>
-  <header class="site-header">
-    <a class="logo" href="#top" aria-label="ホームページつくろう トップへ">
-      <span class="logo-mark">ホ</span>
-      <span>ホームページ<br>つくろう</span>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="みとろ養蜂場 トップへ">
+      <span class="brand-mark" aria-hidden="true">蜜</span>
+      <span><strong>みとろ養蜂場</strong><small>MITORO APIARY</small></span>
     </a>
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">
-      <span></span><span></span><span class="sr-only">メニュー</span>
-    </button>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav"><span></span><span></span><span></span><span class="sr-only">メニュー</span></button>
     <nav class="global-nav" id="global-nav" aria-label="メインメニュー">
-      <a href="#service">できること</a>
-      <a href="#work">制作例</a>
-      <a href="#price">料金</a>
-      <a href="#flow">制作の流れ</a>
-      <a class="nav-contact" href="mailto:homepage.tsukurou@gmail.com">相談してみる <span>↗</span></a>
+      <a href="#about">養蜂場について</a><a href="#nature">三木・みとろの自然</a><a href="#products">蜂蜜</a><a href="#flowers">花と蜜源植物</a><a href="#experience">養蜂体験</a><a class="nav-shop" href="#shop">オンラインショップ</a>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero" id="top">
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-photo photo photo-hero" role="img" aria-label="朝の里山と養蜂箱の仮画像"><span class="photo-label">PHOTO / みとろの朝</span></div>
       <div class="hero-copy">
-        <p class="kicker"><span></span> SMALL BUSINESS WEB DESIGN</p>
-        <h1>あなたの仕事を、<br><em>ちゃんと伝わる形</em>に。</h1>
-        <p class="hero-lead">地域のお店、農家、小さな活動のためのホームページ制作。何を載せたらいいか分からないところから、一緒に考えます。</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="mailto:homepage.tsukurou@gmail.com">まずは相談 <span>↗</span></a>
-          <a class="text-link" href="#work">制作例を見る <span>↓</span></a>
-        </div>
-        <ul class="hero-points" aria-label="サービスの特徴">
-          <li><strong>30,000</strong><span>円〜</span></li>
-          <li><strong>PC / MOBILE</strong><span>どちらも対応</span></li>
-          <li><strong>1 on 1</strong><span>相談から一緒に</span></li>
-        </ul>
+        <p class="eyebrow">MIKI, HYOGO</p>
+        <h1 id="hero-title">三木・みとろの<span class="mobile-break"><br></span>自然から、<br>まっすぐな<span class="mobile-break"><br></span> はちみつを。</h1>
+        <p>花が咲き、蜂が飛び、蜜になる。<br>みとろの自然と歩幅を合わせてつくる蜂蜜です。</p>
       </div>
-
-      <div class="hero-showcase" aria-label="制作例 みとろ養蜂場">
-        <div class="showcase-browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span>mitolo apiary</span></div>
-          <img src="images/mitolo-hero.png" alt="緑豊かな里山を使用した、みとろ養蜂場ホームページのメインビジュアル">
-          <div class="showcase-overlay">
-            <small>WORK 01</small>
-            <strong>みとろ養蜂場</strong>
-            <span>企画・デザイン・制作</span>
-          </div>
-        </div>
-        <div class="floating-note">あなたらしさを、<br>一緒に見つける。</div>
-      </div>
-      <div class="hero-number" aria-hidden="true">01</div>
+      <a class="scroll-guide" href="#intro"><span>SCROLL</span><i></i></a>
     </section>
 
-    <section class="message section">
-      <p class="section-label">はじめてでも、大丈夫です。</p>
-      <div class="message-copy reveal">
-        <h2>「ホームページ欲しいけど、<br>何から話せばええんやろ？」</h2>
-        <div>
-          <p>そんな状態からで大丈夫です。むずかしい言葉や、完成した企画書はいりません。</p>
-          <p>どんな仕事をしていて、誰に知ってほしいのか。話を聞きながら、必要なページや言葉を一緒に整理していきます。</p>
-        </div>
+    <section class="intro section" id="intro">
+      <p class="vertical-note">自然のままに、丁寧に。</p>
+      <div class="intro-copy reveal">
+        <p class="section-number">01 — OUR STORY</p>
+        <h2>蜂蜜をつくることは、<br>土地の声を聴くこと。</h2>
+        <p>私たちが向き合うのは、ミツバチだけではありません。山の木々、野に咲く花、風や雨、移り変わる季節。そのすべてと相談しながら、ひとつずつ手仕事で瓶に詰めています。</p>
+        <a class="text-link" href="#about">養蜂場について知る <span>↗</span></a>
       </div>
     </section>
 
-    <section class="service section" id="service">
-      <div class="section-head reveal">
-        <p class="section-index">01 / SERVICE</p>
-        <h2>できること</h2>
-        <p>小さく始めて、必要になったら育てられる。今の仕事にちょうどいいホームページをつくります。</p>
-      </div>
-      <div class="service-grid">
-        <article class="service-card reveal">
-          <span>01</span><h3>考える</h3>
-          <p>載せたい内容が決まっていなくても大丈夫。お話を聞きながら、魅力と必要な情報を整理します。</p>
-        </article>
-        <article class="service-card reveal">
-          <span>02</span><h3>デザインする</h3>
-          <p>業種や雰囲気に合わせて、その人らしさが伝わる見た目へ。スマートフォンにも対応します。</p>
-        </article>
-        <article class="service-card reveal">
-          <span>03</span><h3>公開する</h3>
-          <p>完成後の公開設定まで対応します。難しい操作はできるだけ減らし、あとから育てやすい形にします。</p>
-        </article>
+    <section class="story-split section" id="about">
+      <div class="photo photo-beekeeper reveal" role="img" aria-label="蜂の巣箱を手入れする養蜂家の仮画像"><span class="photo-label">PHOTO / 手仕事の風景</span></div>
+      <div class="story-card reveal">
+        <p class="section-number">ABOUT US</p><h2>急がず、採りすぎず。<br>蜂と分け合う養蜂。</h2>
+        <p>蜜を採る時も、蜂たちが暮らしていく分を大切に。小さな養蜂場だからこそできる、目の届くものづくりを続けています。</p>
+        <dl class="facts"><div><dt>場所</dt><dd>兵庫県三木市・みとろ</dd></div><div><dt>採蜜</dt><dd>季節ごと・少量生産</dd></div><div><dt>仕事</dt><dd>採蜜から瓶詰めまで</dd></div></dl>
       </div>
     </section>
 
-    <section class="work section" id="work">
-      <div class="work-intro reveal">
-        <p class="section-index">02 / WORK</p>
-        <h2>制作例</h2>
-        <p>見た目を整えるだけではなく、その場所の空気まで伝わることを大切にしています。</p>
+    <section class="quality section" aria-labelledby="quality-title">
+      <div class="quality-heading reveal">
+        <p class="section-number">OUR PROMISE</p>
+        <h2 id="quality-title">自然から届いたものを、<br>できるだけそのままに。</h2>
       </div>
-      <article class="work-card reveal">
-        <div class="work-image">
-          <img src="images/mitolo-work.png" alt="養蜂家が巣枠を確認する、みとろ養蜂場サイトのビジュアル">
-          <a href="https://mitolo-apiary.shoguo333.workers.dev" target="_blank" rel="noopener">サイトを見る <span>↗</span></a>
+      <div class="quality-grid">
+        <article class="quality-card reveal"><span>01</span><h3>採蜜日が明確</h3><p>いつ採れた蜂蜜なのかを大切にし、採蜜日を記録。季節ごとの香りや味わいとともにお届けします。</p></article>
+        <article class="quality-card reveal"><span>02</span><h3>給餌をしない</h3><p>砂糖水などの給餌に頼らず、ミツバチが花から集めた蜜を、自然の恵みとして瓶に詰めます。</p></article>
+        <article class="quality-card reveal"><span>03</span><h3>非加熱</h3><p>高温で加熱せず、採れた蜂蜜の風味を大切に。花の香りと、自然な味わいをそのまま楽しめます。</p></article>
+      </div>
+    </section>
+
+    <section class="nature section" id="nature">
+      <div class="section-heading reveal"><p class="section-number">02 — THE LAND</p><h2>三木・みとろの自然</h2><p>なだらかな山と田畑が広がる、みとろの里山。季節ごとに違う花が咲き、その年だけの香りと味わいを育てます。</p></div>
+      <div class="nature-grid">
+        <div class="photo photo-field reveal" role="img" aria-label="みとろの田園風景の仮画像"><span class="photo-label">PHOTO / 里山の風景</span></div>
+        <blockquote class="reveal"><span>「</span>同じ場所でも、<br>同じ蜜は二度とできない。<small>季節と土地を味わう蜂蜜</small></blockquote>
+        <div class="photo photo-light reveal" role="img" aria-label="木漏れ日と草花の仮画像"><span class="photo-label">PHOTO / 木漏れ日</span></div>
+      </div>
+    </section>
+
+    <section class="products section" id="products">
+      <div class="section-heading section-heading-row reveal"><div><p class="section-number">03 — HONEY</p><h2>季節の蜂蜜</h2></div><p>採れる花や時期によって、色も香りも変わります。みとろの季節を、そのままお楽しみください。</p></div>
+      <div class="product-grid">
+        <article class="product-card reveal"><div class="product-image product-spring"><span class="jar">春<br><small>HONEY</small></span><span class="status">季節限定</span></div><div class="product-info"><p>春の百花蜜</p><span>やわらかな香り、すっきりした甘さ</span><a href="#shop" aria-label="春の百花蜜の詳細を見る">詳しく見る →</a></div></article>
+        <article class="product-card reveal"><div class="product-image product-summer"><span class="jar">夏<br><small>HONEY</small></span></div><div class="product-info"><p>夏の里山蜜</p><span>深みのある香り、濃厚な余韻</span><a href="#shop" aria-label="夏の里山蜜の詳細を見る">詳しく見る →</a></div></article>
+        <article class="product-card reveal"><div class="product-image product-gift"><span class="jar">贈<br><small>GIFT</small></span><span class="status">贈りもの</span></div><div class="product-info"><p>季節の蜜 二本箱</p><span>異なる季節を味わう詰め合わせ</span><a href="#shop" aria-label="季節の蜜 二本箱の詳細を見る">詳しく見る →</a></div></article>
+      </div>
+    </section>
+
+    <section class="flowers section" id="flowers">
+      <div class="flowers-copy reveal"><p class="section-number">04 — FLOWERS</p><h2>花を知ると、<br>蜂蜜はもっとおもしろい。</h2><p>春から秋へ、咲く花が移り変わるたび、蜂蜜の表情も変わります。ミツバチが訪れる花をたどり、一匙の蜜の向こうにある季節をご紹介します。</p></div>
+      <div class="nectar-slider reveal" aria-label="4月から10月の蜜源植物">
+        <div class="slider-head"><p>蜜源植物をめぐる<small>APRIL — OCTOBER</small></p><div class="slider-controls"><button type="button" class="slider-button slider-prev" aria-label="前の月を見る">←</button><button type="button" class="slider-button slider-next" aria-label="次の月を見る">→</button></div></div>
+        <div class="nectar-track" tabindex="0">
+          <article class="nectar-card"><span>APR</span><strong>四月</strong><p>菜の花・桜</p></article>
+          <article class="nectar-card"><span>MAY</span><strong>五月</strong><p>レンゲ・柑橘</p></article>
+          <article class="nectar-card"><span>JUN</span><strong>六月</strong><p>栗・クローバー</p></article>
+          <article class="nectar-card"><span>JUL</span><strong>七月</strong><p>リョウブ・アカメガシワ</p></article>
+          <article class="nectar-card"><span>AUG</span><strong>八月</strong><p>サルスベリ・ヒマワリ</p></article>
+          <article class="nectar-card"><span>SEP</span><strong>九月</strong><p>萩・そば</p></article>
+          <article class="nectar-card"><span>OCT</span><strong>十月</strong><p>セイタカアワダチソウ・コスモス</p></article>
         </div>
-        <div class="work-detail">
-          <p>MITORO APIARY</p>
-          <h3>みとろ養蜂場</h3>
-          <p>兵庫県三木市・みとろの里山で営む養蜂場。自然、手仕事、蜂蜜の上質さが静かに伝わるサイトを制作しました。</p>
-          <dl>
-            <div><dt>担当</dt><dd>構成・デザイン・制作</dd></div>
-            <div><dt>対応</dt><dd>PC・スマートフォン</dd></div>
-            <div><dt>公開</dt><dd>GitHub・Cloudflare</dd></div>
-          </dl>
-        </div>
-      </article>
+        <p class="nectar-note">※ 開花時期は天候や地域の環境によって前後します。</p>
+      </div>
     </section>
 
-    <section class="price section" id="price">
-      <div class="section-head section-head-light reveal">
-        <p class="section-index">03 / PRICE</p>
-        <h2>料金</h2>
-        <p>最初に内容と金額を確認してから制作します。分からないまま料金が増えることはありません。</p>
-      </div>
-      <div class="price-grid">
-        <article class="price-card price-main reveal">
-          <p>ホームページ制作</p>
-          <div><strong>30,000</strong><span>円〜</span></div>
-          <ul>
-            <li>1ページ型ホームページ</li>
-            <li>スマートフォン対応</li>
-            <li>文章・写真の配置</li>
-            <li>公開設定まで対応</li>
-            <li>公開前の修正2回まで</li>
-          </ul>
-        </article>
-        <article class="price-card reveal">
-          <p>維持管理</p>
-          <div><strong>10,000</strong><span>円 / 年</span></div>
-          <ul>
-            <li>表示状態の確認</li>
-            <li>簡単な不具合対応</li>
-            <li>軽い文章・写真変更 年2回程度</li>
-          </ul>
-          <small>※各種ドメイン代・有料サービスの利用料は別途かかります。</small>
-        </article>
-      </div>
-      <p class="price-note">商品販売・予約・管理画面・ページ追加などは、内容を聞いて制作前にお見積もりします。</p>
+    <section class="experience section" id="experience">
+      <div class="photo photo-experience" role="img" aria-label="養蜂体験の参加者の仮画像"></div>
+      <div class="experience-panel reveal"><p class="section-number">05 — EXPERIENCE</p><h2>蜂のいる風景を、<br>体験する。</h2><p>防護服を着て巣箱をのぞき、蜂の暮らしや自然とのつながりを学びます。採れたての蜂蜜を味わう、小さな里山体験です。</p><ol><li><span>01</span>養蜂と蜂のお話</li><li><span>02</span>巣箱の見学</li><li><span>03</span>季節の蜂蜜を試食</li></ol><a class="button button-light" href="#contact">体験について問い合わせる</a></div>
     </section>
 
-    <section class="flow section" id="flow">
-      <div class="section-head reveal">
-        <p class="section-index">04 / FLOW</p>
-        <h2>制作の流れ</h2>
-      </div>
-      <ol class="flow-list">
-        <li class="reveal"><span>01</span><div><h3>メールで相談</h3><p>作りたい理由や今困っていることを、分かる範囲で教えてください。</p></div></li>
-        <li class="reveal"><span>02</span><div><h3>話して整理</h3><p>必要な内容、雰囲気、料金を一緒に確認します。</p></div></li>
-        <li class="reveal"><span>03</span><div><h3>第一案を制作</h3><p>まず全体の雰囲気が分かる形をつくり、実際に見てもらいます。</p></div></li>
-        <li class="reveal"><span>04</span><div><h3>調整して公開</h3><p>文章や写真を整えて完成。公開設定まで行います。</p></div></li>
-      </ol>
+    <section class="shop section" id="shop">
+      <p class="shop-kicker">ONLINE SHOP</p><h2>みとろの季節を、<br>お届けします。</h2><p>オンラインショップは現在準備中です。<br>販売開始まで、もうしばらくお待ちください。</p><span class="coming-soon">COMING SOON</span>
     </section>
 
     <section class="contact section" id="contact">
-      <div class="contact-copy reveal">
-        <p class="section-index">05 / CONTACT</p>
-        <h2>まず、話してみよう。</h2>
-        <p>まだ内容が決まっていなくても大丈夫です。<br>「こんなん作れる？」くらいから、お気軽にどうぞ。</p>
-      </div>
-      <a class="contact-button" href="mailto:homepage.tsukurou@gmail.com" aria-label="メールで相談する">
-        <span class="contact-title">メールで相談する</span><strong>↗</strong>
-        <small>homepage.tsukurou@gmail.com</small>
-        <span class="contact-action">メール作成画面を開く <i>↗</i></span>
-      </a>
+      <div class="contact-title reveal"><p class="section-number">CONTACT</p><h2>お問い合わせ</h2><p>商品や養蜂体験について、<br>お気軽にお問い合わせください。</p><address class="contact-details"><a href="tel:08013004661"><small>お電話</small><strong>080-1300-4661</strong></a><p><small>所在地</small><span>兵庫県三木市吉川町水上715</span></p></address></div>
+      <form class="contact-form reveal" action="#" method="post">
+        <label>お名前<input type="text" name="name" placeholder="山田 太郎"></label><label>メールアドレス<input type="email" name="email" placeholder="example@email.com"></label><label>お問い合わせ内容<textarea name="message" rows="4" placeholder="お問い合わせ内容をご記入ください"></textarea></label><button class="button" type="submit">内容を確認する <span>→</span></button><p class="form-note">※ 第一案のため、現在フォームは送信されません。</p>
+      </form>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <a class="logo footer-logo" href="#top"><span class="logo-mark">ホ</span><span>ホームページ<br>つくろう</span></a>
-    <p>地域のお店や、小さな活動のためのホームページ制作。</p>
-    <div><a href="#service">できること</a><a href="#work">制作例</a><a href="#price">料金</a><a href="#flow">制作の流れ</a></div>
-    <small>© <span id="year"></span> ホームページつくろう</small>
-  </footer>
+  <footer class="site-footer"><div class="footer-brand"><span class="brand-mark">蜜</span><div><strong>みとろ養蜂場</strong><small>兵庫県三木市吉川町水上715</small></div></div><nav><a href="#about">養蜂場について</a><a href="#nature">三木・みとろの自然</a><a href="#products">商品紹介</a><a href="#experience">養蜂体験</a><a href="#contact">お問い合わせ</a></nav><div class="footer-bottom"><p>三木・みとろの自然から、まっすぐなはちみつを。</p><small>© <span id="year"></span> MITORO APIARY</small></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
